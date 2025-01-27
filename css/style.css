@@ -5,76 +5,78 @@
   --cta: #f59e0b;
 }
 
-* {
+body {
+  font-family: "Outfit", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Navbar */
-nav {
-  background: var(--primary);
-}
-.navbar-toggler {
-  border-radius: 2px;
-  padding: 2px 2px;
-  margin-bottom: 10px;
+nav.navbar {
+  background-color: var(--primary);
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  padding: 10px 0;
 }
 
-.navbar-toggler:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.nav-link.active {
-  color: var(--cta) !important;
-  transition: 0.2s;
-}
-
-.active:hover {
+nav .nav-link {
   color: var(--text) !important;
+  font-weight: 600;
+  padding-top: 2rem !important;
 }
 
-ul li a {
-  font-size: 15px;
-  font-weight: 500;
-  font-family: "Outfit", sans-serif;
+nav .nav-link.active {
+  color: var(--cta) !important;
 }
-/* End Navbar */
 
-/* Hero */
 #hero {
-  min-height: 100vh;
-  background: linear-gradient(180deg, #0c4651, #898a8e);
-}
-.content h2 {
+  background: linear-gradient(145deg, #0c4651 50%, #898a8e 40%);
   color: var(--text);
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
 }
 
-.content h1 {
-  color: var(--text);
+#hero h1 {
+  font-size: 3rem;
 }
 
-.content p {
-  color: var(--text);
+#hero h2 {
+  font-size: 2rem;
 }
 
-.content .cta {
+#hero p {
+  font-size: 1.2rem;
+  font-weight: 100 !important;
+  margin-top: 10px;
+}
+
+.cta {
+  background-color: var(--cta);
+  color: var(--text);
+  padding: 10px 20px;
+  font-weight: bold;
   border: none;
-  border-radius: 5px;
-  background-color: var(--cta) !important;
-  padding: 5px 7px;
-  color: #000000;
-  font-size: 15px;
-  font-weight: 500;
-  transition: 0.5s ease-in-out;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
-.content .cta:hover {
-  background-color: rgb(10, 10, 10) !important;
-  color: var(--text);
+.cta:hover {
+  background-color: #e09c00;
 }
 
-.content .icon {
-  margin-top: 8rem !important;
+.icon img {
+  width: 40px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
 }
-/* Hero end */
+
+.icon img:hover {
+  transform: scale(1.1);
+}
+
+img.img-fluid {
+  width: 350px;
+  height: 500px;
+}
