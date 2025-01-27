@@ -31,9 +31,9 @@ nav .nav-link.active {
 }
 
 #hero {
-  background: linear-gradient(110deg, #0c4651 50%, #898a8e 10%, #000 95%);
+  background: linear-gradient(120deg, #0c4651 50%, #898a8e 10%, #000 95%);
   color: var(--text);
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -60,7 +60,7 @@ nav .nav-link.active {
   background-color: var(--cta);
   color: var(--text);
   padding: 10px 20px;
-  font-weight: bold;
+  font-weight: 500;
   border: none;
   border-radius: 8px;
   margin-top: 20px;
@@ -86,9 +86,14 @@ img.img-fluid {
 }
 
 /* About */
-.container-fluid {
-  padding: 50px 15px;
-  background-color: #f8f9fa; /* Light background */
+
+#about {
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+.about-text {
+  font-weight: 700;
 }
 
 hr {
@@ -99,7 +104,14 @@ hr {
   margin: 0px auto 50px auto;
 }
 .container-fluid {
-  background: #05343d !important;
+  padding: 50px 15px;
+  color: var(--text);
+}
+
+.about-right-ctn {
+  font-size: 1.9rem;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .container-img img {
@@ -108,5 +120,3 @@ hr {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: var(--secondary);
 }
-
-/* Flexbox Layout */
