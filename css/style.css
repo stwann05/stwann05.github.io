@@ -59,16 +59,18 @@ nav .nav-link.active {
 .cta {
   background-color: var(--cta);
   color: var(--text);
-  padding: 10px 20px;
   font-weight: 500;
+  padding: 5px 5px;
+  font-size: 1.2rem !important;
   border: none;
   border-radius: 8px;
-  margin-top: 20px;
+  margin-top: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .cta:hover {
   background-color: var(--secondary);
+  color: #000;
 }
 
 .icon img {
@@ -136,4 +138,49 @@ hr {
 
 #skill h1 {
   font-weight: 700;
+}
+
+#project,
+#sertifikat {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 50px 0;
+}
+#project h1,
+#sertifikat h1 {
+  font-weight: 700;
+}
+#project img,
+#sertifikat img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn {
+  background-color: var(--cta);
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 600;
+}
+.project-item:hover,
+.cert-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+footer {
+  background: linear-gradient(#0c4651, #898a8e);
+  color: var(--text);
+  font-size: 23px;
+  padding: 20px 0;
 }
