@@ -14,12 +14,17 @@
 
   .cta {
     padding: 15px 30px;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 
   .about-right-ctn {
     font-size: 2rem;
     line-height: 1.8;
+  }
+
+  .skill-section img {
+    width: 100px; /* Ukuran gambar besar */
+    margin: 10px;
   }
 }
 
@@ -56,14 +61,21 @@
     width: 80%; /* Gambar lebih kecil */
     margin: 0 auto; /* Tengah */
   }
+
+  .skill-section img {
+    width: 80px; /* Ukuran gambar menengah */
+    margin: 8px;
+  }
 }
 
 /* Styling untuk handphone (layar kecil) */
 @media (max-width: 767px) {
   nav .nav-link {
-    font-size: 0.8rem;
-    margin-right: 10px;
+    font-size: 1rem;
     padding-top: 1rem !important;
+    background-color: var(--secondary);
+    width: 20%;
+    opacity: 50%;
   }
 
   #hero {
@@ -102,5 +114,18 @@
 
   hr {
     width: 200px;
+  }
+
+  .skill-section {
+    display: flex;
+
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .skill-section img {
+    width: 40px; /* Ukuran gambar lebih kecil */
+    margin: 5px;
   }
 }

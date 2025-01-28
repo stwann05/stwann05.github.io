@@ -50,7 +50,7 @@ nav .nav-link.active {
 }
 
 #hero p {
-  font-size: 1.5rem;
+  font-size: 1.4rem !important;
   font-style: italic;
   font-weight: 100 !important;
   margin-top: 10px;
@@ -119,4 +119,21 @@ hr {
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: var(--secondary);
+}
+
+#about p {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 100 !important;
+}
+/* skill */
+
+#skill {
+  width: 100%;
+  align-content: center;
+  background-color: var(--primary);
+}
+
+#skill h1 {
+  font-weight: 700;
 }
