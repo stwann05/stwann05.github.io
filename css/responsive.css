@@ -1,131 +1,42 @@
-/* Styling untuk monitor (ukuran layar besar) */
-@media (min-width: 1200px) {
-  #hero h1 {
-    font-size: 4rem;
-  }
-
-  #hero h2 {
-    font-size: 2.5rem;
-  }
-
-  #hero p {
-    font-size: 1.8rem;
-  }
-
-  .cta {
-    padding: 15px 30px;
-    font-size: 1.7rem;
-  }
-
-  .about-right-ctn {
-    font-size: 2rem;
-    line-height: 1.8;
-  }
-
-  .skill-section img {
-    width: 100px; /* Ukuran gambar besar */
-    margin: 10px;
-  }
+/* lAPTOP */
+@media (max-width: 1200px) {
 }
 
-/* Styling untuk tablet (iPad atau layar sedang) */
-@media (min-width: 768px) and (max-width: 1199px) {
-  nav .nav-link {
-    font-size: 0.9rem;
-    margin-right: 20px;
-  }
-
-  #hero h1 {
-    font-size: 3rem;
-  }
-
-  #hero h2 {
-    font-size: 1.8rem;
-  }
-
-  #hero p {
-    font-size: 1.4rem;
-  }
-
-  .cta {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-
-  .about-right-ctn {
-    font-size: 1.6rem;
-    line-height: 1.7;
-  }
-
-  .container-img img {
-    width: 80%; /* Gambar lebih kecil */
-    margin: 0 auto; /* Tengah */
-  }
-
-  .skill-section img {
-    width: 80px; /* Ukuran gambar menengah */
-    margin: 8px;
-  }
-}
-
-/* Styling untuk handphone (layar kecil) */
-@media (max-width: 767px) {
-  nav .nav-link {
-    font-size: 1rem;
-    padding-top: 1rem !important;
-    background-color: var(--secondary);
+/* Ipad */
+@media (max-width: 732px) {
+  nav.navbar {
     width: 20%;
-    opacity: 50%;
-  }
-
-  #hero {
-    flex-direction: column; /* Konten ditumpuk */
-    text-align: center;
-    padding: 20px;
-  }
-
-  #hero h1 {
-    font-size: 2.5rem;
+    position: fixed;
+    padding: 5px 0;
+    margin-top: 10px;
+    margin-left: 5px;
   }
 
   #hero h2 {
-    font-size: 1.5rem;
-  }
-
-  #hero p {
-    font-size: 1.2rem;
-  }
-
-  .cta {
-    padding: 10px 15px;
-    font-size: 0.9rem;
+    margin-top: 4rem;
   }
 
   .about-right-ctn {
-    font-size: 1.4rem;
-    line-height: 1.6;
     text-align: center;
   }
 
-  .container-img img {
-    width: 100%; /* Lebar penuh */
-    border-radius: 10px;
+  #skill {
+    display: flex !important;
+    flex-direction: row !important;
   }
 
-  hr {
-    width: 200px;
+  .image img {
+    width: 80px;
+    height: 80px;
+    margin: 10px !important;
   }
+}
 
-  .skill-section {
-    display: flex;
-
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .skill-section img {
-    width: 40px; /* Ukuran gambar lebih kecil */
-    margin: 5px;
+/* Handphone */
+@media (max-width: 432px) {
+  .image img {
+    width: 80px;
+    height: 80px;
+    margin: 10px !important;
   }
 }

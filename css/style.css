@@ -140,6 +140,10 @@ hr {
   font-weight: 700;
 }
 
+.image {
+  text-align: center;
+}
+
 #project,
 #sertifikat {
   background-color: var(--primary);
