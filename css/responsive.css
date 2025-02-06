@@ -7,36 +7,57 @@
   nav.navbar {
     width: 20%;
     position: fixed;
-    padding: 5px 0;
-    margin-top: 10px;
-    margin-left: 5px;
+    padding: 1px 0;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  nav .nav-link {
+    padding: 5px !important;
+    font-size: 13px;
+  }
+
+  #hero h1 {
+    font-size: 1.6rem;
   }
 
   #hero h2 {
     margin-top: 4rem;
+    font-size: 1.2rem;
   }
 
-  .about-right-ctn {
+  #hero p {
+    font-size: 1rem !important;
+  }
+
+  .cta {
+    font-size: 15px !important;
+  }
+
+  .icon img {
+    height: 30px;
+    width: 30px;
+  }
+
+  img.img-fluid {
+    margin-top: 20px;
+    width: 150px;
+    height: 200px;
+  }
+
+  .about-text {
+    font-size: 20px;
+  }
+
+  hr {
+    width: 140px;
+  }
+  .about-right-ctn p {
+    font-size: 20px !important;
     text-align: center;
-  }
-
-  #skill {
-    display: flex !important;
-    flex-direction: row !important;
-  }
-
-  .image img {
-    width: 80px;
-    height: 80px;
-    margin: 10px !important;
   }
 }
 
 /* Handphone */
 @media (max-width: 432px) {
-  .image img {
-    width: 80px;
-    height: 80px;
-    margin: 10px !important;
-  }
 }
