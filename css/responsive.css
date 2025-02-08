@@ -41,10 +41,13 @@
 
   img.img-fluid {
     margin-top: 20px;
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 300px;
   }
 
+  #skill h1,
+  #project h1,
+  #sertifikat h1,
   .about-text {
     font-size: 20px;
   }
@@ -60,4 +63,17 @@
 
 /* Handphone */
 @media (max-width: 432px) {
+  #hero {
+    min-height: 60vh;
+    width: auto;
+  }
+
+  #about p {
+    text-align: left;
+    font-size: 17px !important;
+  }
+
+  .container-img img {
+    margin-top: 0;
+  }
 }
