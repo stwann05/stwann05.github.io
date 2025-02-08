@@ -144,6 +144,10 @@ hr {
   text-align: center;
 }
 
+/* Skill End */
+
+/* Project & Sertifikat */
+
 #project,
 #sertifikat {
   background-color: var(--primary);
@@ -156,11 +160,11 @@ hr {
 }
 #project img,
 #sertifikat img {
-  max-width: 100%;
-  height: auto;
+  margin: 10px;
+  width: 300px;
+  height: 250px;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 2s ease-in-out;
 }
 
 .btn {
@@ -170,9 +174,10 @@ hr {
   font-weight: 600;
 }
 .project-item:hover,
-.cert-item:hover {
+.sertifikat:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 1px 0px 20px 5px var(--cta);
 }
 .social-icons a {
   margin: 0 10px;
@@ -182,9 +187,25 @@ hr {
 .social-icons a:hover {
   transform: scale(1.1);
 }
+
+/* Project & Sertifikat End */
+
+/* Footer */
+
 footer {
-  background: linear-gradient(#0c4651, #898a8e);
-  color: var(--text);
-  font-size: 23px;
-  padding: 20px 0;
+  background: linear-gradient(#0c4651 10%, #898a8e);
 }
+
+footer,
+p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 32px;
+  margin: 50px -10px 0 -10px;
+}
+
+/* Footer end */
