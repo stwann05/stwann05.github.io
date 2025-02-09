@@ -90,7 +90,7 @@ img.img-fluid {
 /* About */
 
 #about {
-  background-color: var(--primary);
+  background: linear-gradient(#0c4651 20%, #898a8e);
   color: var(--text);
 }
 
@@ -133,7 +133,7 @@ hr {
 #skill {
   width: 100%;
   align-content: center;
-  background-color: var(--primary);
+  background: linear-gradient(#898a8e, #126d7e, #0c4651);
 }
 
 #skill h1 {
@@ -151,6 +151,11 @@ hr {
 #project,
 #sertifikat {
   background-color: var(--primary);
+  color: var(--text);
+  padding: 50px 0;
+}
+#sertifikat {
+  background: linear-gradient(#0c4651, #126d7e);
   color: var(--text);
   padding: 50px 0;
 }
@@ -193,7 +198,7 @@ hr {
 /* Footer */
 
 footer {
-  background: linear-gradient(#0c4651 10%, #898a8e);
+  background: linear-gradient(#126d7e 10%, #898a8e);
 }
 
 footer,
