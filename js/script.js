@@ -25,3 +25,38 @@ document.addEventListener("click", function (event) {
     menu.classList.remove("show");
   }
 });
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("navbar-colored");
+    navbar.classList.remove("navbar-transparent");
+  } else {
+    navbar.classList.add("navbar-transparent");
+    navbar.classList.remove("navbar-colored");
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".navbar");
+  const hamburgerButton = document.getElementById("Hamburger-button");
+  const navbarNav = document.getElementById("navbarNav");
+
+  function updateNavbar() {
+    if (window.scrollY > 50) {
+      navbar.classList.add("navbar-colored");
+      navbar.classList.remove("navbar-transparent", "navbar-active");
+    } else if (navbarNav.classList.contains("show")) {
+      navbar.classList.add("navbar-active");
+      navbar.classList.remove("navbar-transparent", "navbar-colored");
+    } else {
+      navbar.classList.add("navbar-transparent");
+      navbar.classList.remove("navbar-active", "navbar-colored");
+    }
+  }
+
+  window.addEventListener("scroll", updateNavbar);
+
+  hamburgerButton.addEventListener("click", function () {
+    setTimeout(updateNavbar, 10); // Tambahkan delay kecil agar class berubah dengan smooth
+  });
+});

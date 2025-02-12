@@ -1,5 +1,6 @@
+@import url(animation.css);
 :root {
-  --primary: #0c4651;
+  --primary: rgb(12, 70, 81);
   --secondary: #898a8e;
   --text: #f8f7f2;
   --cta: #f59e0b;
@@ -10,19 +11,31 @@ body {
   margin: 0;
   padding: 0;
 }
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0); /* Transparan */
+}
+
+.navbar-colored {
+  background-color: rgba(12, 70, 81, 0.9); /* Warna saat scroll */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 nav.navbar {
-  background-color: var(--primary);
-  width: 100%;
-  position: absolute;
-  background: transparent;
   padding: 10px 0;
 }
 
 nav .nav-link {
   color: var(--text) !important;
   font-weight: 600;
-  padding-top: 2rem !important;
   margin-right: 30px;
 }
 
@@ -41,12 +54,19 @@ nav .nav-link.active {
 #hero h1 {
   font-size: 3rem;
   font-weight: 550 !important;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s steps(20, end);
 }
 
 #hero h2 {
   font-size: 2rem;
   font-weight: 500;
   font-style: italic;
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation: typing 3s steps(30, end);
 }
 
 #hero p {
@@ -54,6 +74,7 @@ nav .nav-link.active {
   font-style: italic;
   font-weight: 100 !important;
   margin-top: 10px;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .cta {
@@ -66,6 +87,7 @@ nav .nav-link.active {
   border-radius: 8px;
   margin-top: 10px;
   transition: all 0.3s ease-in-out;
+  animation: slideIn 1s ease-out;
 }
 
 .cta:hover {
@@ -76,6 +98,7 @@ nav .nav-link.active {
 .icon img {
   width: 40px;
   transition: transform 0.3s ease;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .icon img:hover {
@@ -85,6 +108,7 @@ nav .nav-link.active {
 img.img-fluid {
   width: 300px;
   height: 420px;
+  animation: slideIn 1s ease-out;
 }
 
 /* About */
